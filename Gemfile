@@ -19,6 +19,7 @@ gem 'puma', '~> 4.1'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
+# Devise authentication + jwt
 gem 'devise'
 gem 'devise-jwt'
 gem 'fast_jsonapi'

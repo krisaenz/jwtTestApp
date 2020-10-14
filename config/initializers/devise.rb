@@ -312,7 +312,7 @@ Devise.setup do |config|
   # Specify on every post request to login call, append JWT token to Authorization header as “Bearer” + token when there’s a successful response sent back 
   # and on a call to logout endpoint, the token should be revoked. The expire time is set to 30 mins.
   config.jwt do |jwt|
-    jwt.secret = ENV['DEVISE_JWT_SECRET_KEY']
+    jwt.secret = Rails.application.credentials.devise_jwt_secret[:key]
     jwt.dispatch_requests = [
       ['POST', %r{^/login$}]
     ]
