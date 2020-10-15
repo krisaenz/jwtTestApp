@@ -1,7 +1,7 @@
 class TestController < ApplicationController
     def home
         render json: { 
-            :status => "You are connected!" 
+            :status => "Welcome to Brikit Cloud :-)" 
         }
     end
 end

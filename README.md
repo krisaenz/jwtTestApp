@@ -1,3 +1,3 @@
 # README
 
-Rails api ulilizing devise and jwt
+Backend api utilizing devise/jwt
